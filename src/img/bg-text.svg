@@ -1,0 +1,14 @@
+<svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="333" height="160" viewBox="0 0 333 160">
+  <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(0 17)" stroke="#707070" stroke-width="1" opacity="0.39">
+    <rect width="2" height="120" stroke="none"/>
+    <rect x="0.5" y="0.5" width="1" height="119" fill="none"/>
+  </g>
+  <text id="CLAN" transform="translate(9 53)" fill="#fff" font-size="51" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">CLAN</tspan></text>
+  <text id="SPEAK" transform="translate(9 132)" fill="#2b2d42" font-size="102" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">SPEAK</tspan></text>
+  <rect id="Rectangle_11" data-name="Rectangle 11" width="23" height="23" transform="translate(280 21)" fill="#fff"/>
+  <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(224 21)" fill="#9200ff" stroke="#fff" stroke-width="3">
+    <rect width="23" height="23" stroke="none"/>
+    <rect x="1.5" y="1.5" width="20" height="20" fill="none"/>
+  </g>
+  <rect id="Rectangle_13" data-name="Rectangle 13" width="23" height="23" transform="translate(168 21)" fill="#2b2d42"/>
+</svg>
