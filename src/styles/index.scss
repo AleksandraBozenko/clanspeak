@@ -1,6 +1,7 @@
 $body-color: black;
 $grey: #707070;
 $white: #fff;
+$violet: #9D00FF;
 @mixin center {
   display: flex;
   justify-content: center;
@@ -63,6 +64,7 @@ body {
     width: 100%;
     @include center;
     flex-direction: column;
+    padding-bottom: 40px;
     &--text{
       width: 80%;
       padding-top: 30px;
@@ -73,7 +75,7 @@ body {
   }
 }
 .cooperation{
-  background: $grey;
+  background: $violet;
   color: $white;
   height: 50vh;
   &__title{
@@ -104,7 +106,76 @@ body {
           } 
          } 
        } 
-
+.statistics{
+  width: 100%;
+  @include center;
+  flex-direction: column;
+  color: $white;
+  background: $body-color;
+  padding-bottom: 40px;
+  &__content{
+  @include center;
+  flex-direction: column;
+    &--box{
+    @include center;
+    flex-direction: column;
+    border-bottom: 2px solid $violet;
+    padding: 20px 0 10px 0;
+    width: 180px;
+    &-amount{
+      margin: 0;
+      color: $violet;
+      font-weight: bold;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    &-text{
+      margin: 0;
+    }
+  }
+ }
+}
+.regulations{
+  width: 100%;
+  &__title{
+    width: 100%;
+    padding: 30px 0;
+    @include center;
+    &--img{
+      width: 50%;
+      @include center;
+      // border-right: 2px solid blue;
+      &-icon{
+        width: 100px;
+        height: 100%;
+        border-right: 1px solid $grey; 
+        padding-right: 30px;
+      }
+    }
+    &--subtitle{
+      width: 50%;
+      &-text{
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 20px 0;
+        margin: 0;
+      }
+    }
+  }
+  &__description{
+    width: 100%;
+    @include center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    &--text{
+      width: 80%;
+      padding-top: 30px;
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
 // media
 
 @media(min-width: 700px){
@@ -160,10 +231,59 @@ body {
         flex-direction: row-reverse;
       }
      }
+     .statistics{
+       &__content{
+         flex-direction: row;
+         &--box{
+           padding-bottom: 30px;
+         }
+       }
+     }
+  .regulations{
+    &__title{
+      height: 100px;
+      &--img{
+        width: 30vw;
+        margin-right: 20vw;
+        margin-top: 600px;
+        &-icon{
+          width: 200px;
+        }
+      }
+      &--subtitle{
+        width: 50%;
+        &-text{
+          text-align: center;
+          margin-right: 12vw;
+          font-size: 2em;
+        }
+      }
+    }
+    &__description{
+      width: 100%;
+      // height: 300px;
+      justify-content: center;
+      align-items: flex-end;
+      &--title{
+        width: 60%;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      &--text{
+        width: 60%;
+        padding: 30px;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+    }
+  }
 }
-// .brand__box:nth-child(even){
-//   flex-direction: row-reverse;
-// }
+
 @media(min-width: 1600px){
   .about{
     &__description{
