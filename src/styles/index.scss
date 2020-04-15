@@ -12,6 +12,7 @@ body {
   color: $body-color;
   font-family: sans-serif;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 .header{
   width: 100%;
@@ -186,7 +187,6 @@ body {
   background-repeat: no-repeat;
   color: $white;
   padding-top: 100px;
-
   &__box{
     width: 100%;
     @include center;
@@ -197,10 +197,22 @@ body {
       border-radius: 15px;
       @include center;
       flex-direction: column;
+      padding: 10px;
+      &-socials{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      &-img{
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+      }
       &-text{
         font-weight: bold;
         margin: 0;
-        padding: 10px;
+        padding: 5px;
       }
     }
     &--form{
@@ -234,6 +246,7 @@ body {
         border-radius: 15px;
         color: $violet;
         padding: 10px 50px;
+        cursor: pointer;
       }
     }
   } 
